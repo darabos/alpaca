@@ -17952,6 +17952,8 @@ this["HandlebarsPrecompiled"]["bootstrap-edit"]["message"] = Handlebars.template
                             {
                                 self.addItem(i, itemSchema, itemOptions, data[i], function() {
                                     _done();
+                                    var childField = self.children[i]
+                                    childField.setValue(data[i]);
                                 });
                             };
                         })(i, data);

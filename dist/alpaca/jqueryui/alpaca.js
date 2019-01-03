@@ -17044,6 +17044,8 @@ this["HandlebarsPrecompiled"]["web-edit"]["wizard"] = Handlebars.template({"1":f
                             {
                                 self.addItem(i, itemSchema, itemOptions, data[i], function() {
                                     _done();
+                                    var childField = self.children[i]
+                                    childField.setValue(data[i]);
                                 });
                             };
                         })(i, data);
